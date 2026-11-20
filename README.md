@@ -1,16 +1,57 @@
-# React + Vite
+# SSO UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend for my [SSO Server](https://github.com/vernekaranirudh06/SSO-SERVER). It includes the admin console for managing users, roles and tenants, and a landing page for the SSO product.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Admin console for managing the SSO platform
+- Role-based admin access
+- Forms with validation (React Hook Form + Zod)
+- Responsive SaaS landing page
+- State management with Redux Toolkit
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React, Vite
+- Redux Toolkit
+- Tailwind CSS v4
+- React Hook Form, Zod
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18 or later
+- The [SSO Server](https://github.com/vernekaranirudh06/SSO-SERVER) running locally or deployed
+
+### Setup
+
+```bash
+git clone https://github.com/vernekaranirudh06/SSO-UI.git
+cd SSO-UI
+npm install
+```
+
+Create a `.env` file in the project root:
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Author
+
+Anirudh D Vernekar
+[LinkedIn](https://linkedin.com/in/anirudh-d-vernekar) | [GitHub](https://github.com/vernekaranirudh06)
